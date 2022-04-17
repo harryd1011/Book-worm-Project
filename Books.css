@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@1,300&family=Lexend+Deca:wght@300;400&family=Livvic:ital,wght@1,400;1,500&display=swap');
+
+html, body{
+	margin: 0%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+:root{
+	--text-gray: #3f4954;
+	--text-light: #686666da;
+	--bg-color: #0f0f0f;
+	--white: #ffffff;
+	--midnight: #104f55;
+
+	--sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+	--Abel: 'Abel',cursive;
+	--Anton: 'Anton',cursive;
+	--Josefin: 'Josefin',cursive;
+	--Lexend: 'Lexend',cursive;
+	--Livvic: 'Livvic',cursive;
+
+}
+/*---------------------------------------------------------------------*/
+a{
+	text-decoration: none;
+	color: var(--text-gray);
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: var(--text-gray);
+}
+ul{
+	list-style-type: none ;
+}
+h1{
+	font-family: var(--Lexend);
+	font-size: 2.5rem;
+}
+h2{
+	font-family: var(--Lexend);
+}
+h3{
+	font-size: 1.3rem;
+	font-family: var(--Abel);
+}
+button.btn{
+	border: none;
+	border-radius: 2rem;
+	padding: 1rem 3rem;
+	font-family: var(--Livvic);
+	font: 1rem;
+	cursor: pointer;
+}
+span{
+	font-family: var(--Abel);
+}
+
+.container{
+	margin: 0.5vw;
+}
+/*---------------------------------------------------------------------*/
+
+
+.nav{
+	background: white;
+	padding: 0.2rem;
+	height: 0rem;
+	min-height: 10vh;
+	overflow: hidden;
+	transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{
+	justify-content: space-between ;
+}
+
+.nav .toggle-collapse{
+	position: absolute;
+	top: 0%;
+	width: 90%;
+	cursor: pointer;
+}
+
+.nav .toggle-collapse .toggle-icons{
+	display: flex;
+	justify-content: flex-end;
+	padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+	font-size: 1.4rem;
+	color: var(--text-gray);
+}
+
+.collapse{
+	height: 30rem;
+}
+
+.nav .nav-items{
+	display: flex;
+	margin: 0;
+}
+.nav .nav-brand a{
+	font-size: 1.6rem;
+	padding: 1rem 0;
+	display: block;
+	font-family: var(--Lexend);
+	font-size: 1.6rem;
+}
+.nav .nav-items .nav-link{
+	padding: 1.6rem 1rem;
+	font-size: 1.1rem;
+	position: relative;
+	font-family: var(--Abel);
+	font-size: 1.1rem;
+
+}
+.nav .nav-items .nav-link:hover{
+	background-color: var(--midnight);
+}
+.nav .nav-items .nav-link:hover a{
+	color: var(--white);
+}
+.nav .social{
+	padding: 1.4rem 0;
+
+}
+.nav .social i{
+	padding: 0.2rem;
+}
+.nav .social i:hover{
+	color: #a1c4cf;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f3f3f3;
+	font-family: 'Poppins',sans-serif;
+}
+.menu{
+	padding: 0 10px 30px 10px;
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+	grid-gap: 20px 40px;
+}
+.heading{
+	background-color: black;
+	color: #ffffff;
+	margin-bottom: 30px;
+	padding: 30px 0;
+	grid-column: 1/-1;
+	text-align: center;
+}
+.heading>h1{
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 10px;
+	margin-bottom: 10px;
+}
+.heading>h3{
+	font-weight: 600;
+	font-size: 22px;
+	letter-spacing: 5px;
+}
+.food-items{
+	display: grid;
+	position: relative;
+	grid-template-rows: auto 1fr;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+}
+.food-items img{
+	position: relative;
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+}
+h1{
+	grid-column: 1/-1;
+	text-align: center;
+}
+.details{
+	padding: 20px 10px;
+	display: grid;
+	grid-template-rows: auto 1fr 50px;
+	grid-row-gap: 15px;
+}
+.details-sub{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.details-sub>h5{
+	font-weight: 600;
+	font-size: 18px;
+}
+.details>p{
+	color: #6f6f6f;
+	font-size: 15px;
+	line-height: 28px;
+	font-weight: 400;
+	align-self: stretch;
+}
+.details>button{
+	background-color: lightcoral;
+	border: none;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	width: 180px;
+}
